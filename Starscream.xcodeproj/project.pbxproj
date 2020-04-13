@@ -25,7 +25,6 @@
 		8A1681A9223D8707000C08D8 /* FoundationSecurity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A1681A8223D8707000C08D8 /* FoundationSecurity.swift */; };
 		8A7A718821F8E1490061166D /* Transport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A7A718721F8E1490061166D /* Transport.swift */; };
 		8A7A718A21F8E23C0061166D /* TCPTransport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A7A718921F8E23C0061166D /* TCPTransport.swift */; };
-		8A7A718C21F8F9790061166D /* FoundationTransport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A7A718B21F8F9790061166D /* FoundationTransport.swift */; };
 		8A7A718F21F924D40061166D /* Framer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A7A718E21F924D40061166D /* Framer.swift */; };
 		8A7A719121FA3DCD0061166D /* FrameCollector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A7A719021FA3DCD0061166D /* FrameCollector.swift */; };
 		8A7A719321FA42BA0061166D /* HTTPHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A7A719221FA42BA0061166D /* HTTPHandler.swift */; };
@@ -55,7 +54,6 @@
 		8A1681A8223D8707000C08D8 /* FoundationSecurity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoundationSecurity.swift; sourceTree = "<group>"; };
 		8A7A718721F8E1490061166D /* Transport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Transport.swift; path = Transport/Transport.swift; sourceTree = "<group>"; };
 		8A7A718921F8E23C0061166D /* TCPTransport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TCPTransport.swift; path = Transport/TCPTransport.swift; sourceTree = "<group>"; };
-		8A7A718B21F8F9790061166D /* FoundationTransport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = FoundationTransport.swift; path = Transport/FoundationTransport.swift; sourceTree = "<group>"; };
 		8A7A718E21F924D40061166D /* Framer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Framer.swift; sourceTree = "<group>"; };
 		8A7A719021FA3DCD0061166D /* FrameCollector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameCollector.swift; sourceTree = "<group>"; };
 		8A7A719221FA42BA0061166D /* HTTPHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPHandler.swift; sourceTree = "<group>"; };
@@ -177,7 +175,6 @@
 			children = (
 				8A7A718721F8E1490061166D /* Transport.swift */,
 				8A7A718921F8E23C0061166D /* TCPTransport.swift */,
-				8A7A718B21F8F9790061166D /* FoundationTransport.swift */,
 			);
 			name = Transport;
 			sourceTree = "<group>";
@@ -338,7 +335,6 @@
 				8A1681A7223D8664000C08D8 /* Security.swift in Sources */,
 				8A7A718A21F8E23C0061166D /* TCPTransport.swift in Sources */,
 				8A1681A9223D8707000C08D8 /* FoundationSecurity.swift in Sources */,
-				8A7A718C21F8F9790061166D /* FoundationTransport.swift in Sources */,
 				BBB5ABE8215E2217005B48B6 /* WebSocket.swift in Sources */,
 				5C839729231359AE00856501 /* StringHTTPHandler.swift in Sources */,
 				5C7CB5A922B5A14C006AF81B /* Engine.swift in Sources */,
