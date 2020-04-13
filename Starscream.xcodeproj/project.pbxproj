@@ -32,8 +32,6 @@
 		8A7A719621FFB3190061166D /* FuzzingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A7A719421FFB2E30061166D /* FuzzingTests.swift */; };
 		8A7A719921FFB4650061166D /* MockTransport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A7A719721FFB4280061166D /* MockTransport.swift */; };
 		8A7A719C220248330061166D /* MockServer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A7A719A2200C6DE0061166D /* MockServer.swift */; };
-		8A906E3D2208BD9B0015057D /* Compression.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A906E3C2208BD9B0015057D /* Compression.swift */; };
-		8A906E3F2208C7E80015057D /* WSCompression.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A906E3E2208C7E80015057D /* WSCompression.swift */; };
 		8ABD4470224C036A00FB8370 /* Data+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ABD446F224C036A00FB8370 /* Data+Extensions.swift */; };
 		BBB5ABE8215E2217005B48B6 /* WebSocket.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBB5ABE4215E2217005B48B6 /* WebSocket.swift */; };
 /* End PBXBuildFile section */
@@ -64,8 +62,6 @@
 		8A7A719421FFB2E30061166D /* FuzzingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FuzzingTests.swift; sourceTree = "<group>"; };
 		8A7A719721FFB4280061166D /* MockTransport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockTransport.swift; sourceTree = "<group>"; };
 		8A7A719A2200C6DE0061166D /* MockServer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockServer.swift; sourceTree = "<group>"; };
-		8A906E3C2208BD9B0015057D /* Compression.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Compression.swift; path = Compression/Compression.swift; sourceTree = "<group>"; };
-		8A906E3E2208C7E80015057D /* WSCompression.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WSCompression.swift; path = Compression/WSCompression.swift; sourceTree = "<group>"; };
 		8ABD446F224C036A00FB8370 /* Data+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Data+Extensions.swift"; sourceTree = "<group>"; };
 		BBB5ABE4215E2217005B48B6 /* WebSocket.swift */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 4; lastKnownFileType = sourcecode.swift; name = WebSocket.swift; path = Starscream/WebSocket.swift; sourceTree = "<group>"; tabWidth = 4; };
 		D88EAF811ED4DFD3004FE2C3 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
@@ -137,7 +133,6 @@
 				5C7CB5A522B59A82006AF81B /* Engine */,
 				8A7A718D21F924BF0061166D /* Framer */,
 				8A7A718621F8DB930061166D /* Transport */,
-				8A7A718521F8DB810061166D /* Compression */,
 				8A1681A5223D8648000C08D8 /* Security */,
 				BBB5ABE4215E2217005B48B6 /* WebSocket.swift */,
 				5C85661B2257AE7500A371DD /* Server */,
@@ -175,15 +170,6 @@
 				8A1681A8223D8707000C08D8 /* FoundationSecurity.swift */,
 			);
 			path = Security;
-			sourceTree = "<group>";
-		};
-		8A7A718521F8DB810061166D /* Compression */ = {
-			isa = PBXGroup;
-			children = (
-				8A906E3C2208BD9B0015057D /* Compression.swift */,
-				8A906E3E2208C7E80015057D /* WSCompression.swift */,
-			);
-			name = Compression;
 			sourceTree = "<group>";
 		};
 		8A7A718621F8DB930061166D /* Transport */ = {
@@ -364,8 +350,6 @@
 				5C23C24521FBB0EE00D315F1 /* FoundationHTTPHandler.swift in Sources */,
 				5C85661D2257AE9D00A371DD /* WebSocketServer.swift in Sources */,
 				5CF1D0682253DD940081C8A8 /* Server.swift in Sources */,
-				8A906E3D2208BD9B0015057D /* Compression.swift in Sources */,
-				8A906E3F2208C7E80015057D /* WSCompression.swift in Sources */,
 				5C7CB5A722B59ABA006AF81B /* NativeEngine.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -428,7 +412,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "$(SRCROOT)/Sources/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				MARKETING_VERSION = 4.0.3;
@@ -456,7 +440,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "$(SRCROOT)/Sources/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				MARKETING_VERSION = 4.0.3;
